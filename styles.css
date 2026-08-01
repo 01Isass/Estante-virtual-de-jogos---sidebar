@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box; /*força o navegador a incluir padding e borders dentro da largura e altura totais declaradas de um elemento.*/
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+.sidebar{
+    position: absolute;
+    width: 60px;
+    height: 100vh;
+    background-color: #fbfcfd;
+    transition: .5s;
+    overflow: hidden;
+     display: flex;         
+    flex-direction: column; 
+    justify-content: center; /* Centraliza a lista verticalmente na tela */
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.sidebar ul li:hover {
+    background: #f3f3f3;
+}
+
+.sidebar ul li a {
+    display: flex; /*Deixa o icone e o texto alinhados*/
+    white-space: nowrap; /*não quebra as palavras com espaços*/
+    text-decoration: none; /*Tira o sublinhado do li*/
+}
+
+.sidebar ul li .icone i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem; /*Os icones se comportam como fonte, então se eu aumentar aq aumenta o icone*/
+    min-width: 60px;
+    height: 60px;
+    color: #228ed6;
+}
+
+.sidebar ul li .titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #228ed6;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    border-right: 4px solid #228ed6
+}
+
+
